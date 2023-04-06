@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="topbar">
+                <img src="./assets/images/icons/Left Side.png" alt="">
+                <img src="./assets/images/icons/Right Side.png" alt="">
+            </div>
+            <div class="row nav-bar">
+                <div class="navigater">
+                    <a href="#"><img src="./assets/images/icons/arow.svg" alt="" class="navigater__img"></a>
+                    <h1 class="navigater__title">My Team</h1>
+                </div>
+                <div class="timer-alert">
+                    <span class="timer-alert__time">1h 26m Left</span>
+                   <a href="#"> <img src="./assets/images/icons/Group.svg" alt="" class="timer-alert__img"></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- banner of team  -->
+
+    <section>
+            <div class="container">
+                <div class="teams">
+                    <div class="teams__list">
+                        <div class="teams__list__team">
+                            <img src="./assets/images/icons/indiaflag.png" alt="" class="teams__list__team--flag">
+                            <span class="teams__list__team--team-name">India</span>
+                        </div>
+                        <div class="teams__list__player">
+                            <span class="teams__list__player__count">4</span>
+                        </div>
+                    </div>
+                    <div class="teams__list">
+                        <div class="teams__list__team">
+                            <img src="./assets/images/icons/newzeland-Flag.png" alt="" class="teams__list__team--flag">
+                            <span class="teams__list__team--team-name">New Zealand</span>
+                        </div>
+                        <div class="teams__list__player">
+                            <span class="teams__list__player__count bg-dark">3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-details-card row">
+                    <div class="credit-player-card">
+                        <div class="credit-player-card__credit-left">
+                            <div class="credit-player-card__credit-left__text">
+                                <span>45</span> <span class="small-text">Credit Left</span>
+                            </div>
+                            <div class="credit-player-card__credit-left__progress-bar progress-container">
+                                <progress  id="file" value="32" max="100"  ></progress>
+                            </div>
+                        </div>
+                        <div class="credit-player-card__credit-left">
+                            <div class="credit-player-card__credit-left__text">
+                                <span>77/11</span> <span class="small-text">Players </span>
+                            </div>
+                            <div class="credit-player-card__credit-left__progress-bar progress-container">
+                                <progress  id="file" value="32" max="100"  ></progress>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="switchs">
+                            <div class=" switch__box" id="myDIV">
+                                <div class="switch__box__btn active btn" id="btn1" >
+                                        <img src="./assets/images/icons/Frame-t1.png" alt="">
+                                        <p>List</p>
+                                </div>
+                                <div class="switch__box__btn btn" id="btn2"   >
+                                        <img src="./assets/images/icons/Frame-pitch.png" alt="">
+                                        <p>Pitch</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- team-tabel -->
+
+    <section id="list">
+            <div class="player-list">
+                <table>
+                    <tr>
+                      <th colspan="2" >Players</th>
+                      <th>Points</th>
+                      <th colspan="2">Credits</th>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/images/blue-t.png" alt=""> </td>
+                        <td>V Kohli <p>IND</p></td>
+                        <td>325.5</td>
+                        <td>11.5</td>
+                        <td><a href="#"><a href="#"><img src="./assets/images/icons/plus.svg" alt=""></a></a></td>
+                    </tr> 
+                    <tr class="remove">
+                        <td><img src="./assets/images/blue-t.png" alt=""> </td>
+                        <td>R Sharma <p>IND</p></td>
+                        <td>256.5</td>
+                        <td>10.5</td>
+                        <td><a href="#"><img src="./assets/images/icons/sub.svg" alt=""></a></td>
+                    </tr> 
+                    <tr>
+                        <td><img src="./assets/images/black-t.png" alt=""> </td>
+                        <td>J Neesham <p>NZ</p></td>
+                        <td>186.5</td>
+                        <td>10.5</td>
+                        <td><a href="#"><img src="./assets/images/icons/plus.svg" alt=""></a></td>
+                    </tr> 
+                    <tr>
+                        <td><img src="./assets/images/black-t.png" alt=""> </td>
+                        <td>K Williamson <p>NZ</p></td>
+                        <td>386.5</td>
+                        <td>10</td>
+                        <td><a href="#"><img src="./assets/images/icons/plus.svg" alt=""></a></td>
+                    </tr> 
+                    <tr class="remove">
+                        <td><img src="./assets/images/blue-t.png" alt=""> </td>
+                        <td>M Agarwal <p>IND</p></td>
+                        <td>226.5</td>
+                        <td>9</td>
+                        <td><a href="#"><img src="./assets/images/icons/sub.svg" alt=""></a></td>
+                    </tr> 
+                    <tr>
+                        <td><img src="./assets/images/black-t.png" alt=""> </td>
+                        <td>M Guptill <p>NZ</p></td>
+                        <td>158</td>
+                        <td>8.5</td>
+                        <td><a href="#"><img src="./assets/images/icons/plus.svg" alt=""></a></td>
+                    </tr>  
+                </table>
+            </div>
+
+            <div class="bottom-btn">
+                <div class="btn-row">
+                    <div class="btn-row__filter">
+                        <img src="./assets/images/filter.png" alt="">
+                        <span>3</span>
+                    </div>
+                    <div class="btn-row__submit">
+                        <button  class="btn-row__submit__continue">Continue</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="pitch">
+        <div class="pitch">
+            <div class="pitch-board">
+                <div class="team-player">
+                    <span class="team-player__titel">WICKET KEEPERS</span>
+                    <div class="team-player__item">
+                        <img src="./assets/images/blue-t.png" alt="">
+                        <div class="team-player__item--box cap">
+                            <h6>MS Dhoni</h6>
+                            <p>11CR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-player p-2">
+                    <span class="team-player__titel">Batsmen</span>
+                    <div class="team-row">
+                        <div class="team-player__item">
+                            <img src="./assets/images/blue-t.png" alt="">
+                            <div class="team-player__item--box">
+                                <h6>MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                        <div class="team-player__item">
+                            <img src="./assets/images/black-t.png" alt="">
+                            <div class="team-player__item--box vc">
+                                <h6 class="bg-dark">MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                        <div class="team-player__item">
+                            <img src="./assets/images/black-t.png" alt="">
+                            <div class="team-player__item--box">
+                                <h6 class="bg-dark">MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                        <div class="team-player__item">
+                            <img src="./assets/images/blue-t.png" alt="">
+                            <div class="team-player__item--box">
+                                <h6>MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                        <div class="team-player__item">
+                            <img src="./assets/images/blue-t.png" alt="">
+                            <div class="team-player__item--box">
+                                <h6>MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="team-player p-2">
+                    <span class="team-player__titel">All Rounder</span>
+                    <div class="team-row space-evenley">
+                        <div class="team-player__item">
+                            <img src="./assets/images/black-t.png" alt="">
+                            <div class="team-player__item--box">
+                                <h6 class="bg-dark">MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                        <div class="team-player__item">
+                            <img src="./assets/images/blue-t.png" alt="">
+                            <div class="team-player__item--box">
+                                <h6>MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-player p-2">
+                    <span class="team-player__titel">Bowler</span>
+                    <div class="team-row space-evenley">
+                        <div class="team-player__item">
+                            <img src="./assets/images/black-t.png" alt="">
+                            <div class="team-player__item--box">
+                                <h6 class="bg-dark">MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                        <div class="team-player__item">
+                            <img src="./assets/images/blue-t.png" alt="">
+                            <div class="team-player__item--box">
+                                <h6>MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                        <div class="team-player__item">
+                            <img src="./assets/images/black-t.png" alt="">
+                            <div class="team-player__item--box">
+                                <h6 class="bg-dark">MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                        <div class="team-player__item">
+                            <img src="./assets/images/blue-t.png" alt="">
+                            <div class="team-player__item--box">
+                                <h6>MS Dhoni</h6>
+                                <p>11CR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/source.js"></script>
+</body>
+</html>

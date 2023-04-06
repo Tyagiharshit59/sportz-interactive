@@ -1,0 +1,58 @@
+.btn-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 20px;
+    width: 355px;
+    margin: auto;
+    &__filter{
+        padding: $xm;
+        border-radius: 100%;
+        background-color: $btn-color;
+        display: flex;
+        position: relative;
+        margin-right: 29px;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        span{
+            position: absolute;
+            top: -2px;
+            right: 0px;
+            padding: 5px;
+            color: $bg-light;
+            background-color: red;
+            border-radius: 100%;
+            display: flex;
+            font-size: 8px;
+            font-weight: $fw-5;
+            line-height: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.4)
+            
+        }:hover{
+            opacity: 0.7;
+        
+        }
+    }
+    &__submit{
+        button{
+            width: 158px;
+            text-align: center;
+            padding: $xm 0 $xm 0;
+            border: none;
+            border-radius: 4px;
+            background-color: $btn-color;
+            color: $bg-light;
+            font-weight: $fw-5;
+            font-size: $fs-m;
+            line-height: $lh-l;
+            cursor: pointer;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            &:hover{
+                opacity: 0.7;
+            
+            }
+        }
+    }
+    
+}
+

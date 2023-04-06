@@ -1,0 +1,42 @@
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+    padding: $xl 0px $xl 0px;
+    .navigater{
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        &__img{
+            width: 18px;
+        }
+        &__title{
+            padding-left: $xl;
+            font-size: $fs-l;
+            color: $bg-light;
+            line-height: $lh-xl;
+            @include font-style;
+        }
+    }
+    .timer-alert{
+        display: flex;
+        align-items: center;
+        text-align: end;
+        &__time{
+        padding: 5px 12px 5px 12px;
+        background-color: $card-color;
+        border-radius: 4px;
+        color: $bg-light;
+        font-size: $fs-sm;
+        margin-right: $xl ;
+        }
+        &__img{
+            width: 20px;
+        }
+    }
+}
+.topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,136 @@
+.teams{
+    margin-bottom: $xl;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $bg-light;
+        font-size: $fs-sm;
+        line-height: $lh-s;
+        font-weight: $fw-4;
+        margin-bottom: $xm;
+        @include font-style;
+        &__team{
+            align-items: center;
+            display: flex;
+            &--flag{
+                width: 40px;
+            }
+            &--team-name{
+                margin-left: $m;
+                text-transform: uppercase;
+            }
+        }
+        &__player{
+            &__count{
+                padding: 1.5px $l 1.5px $l;
+                background-color: #506582;
+                border-radius: 2px;
+            }
+            .bg-dark{
+                background-color: $bg-pill !important;
+            }
+        }
+    }
+}
+
+.team-details-card{
+    justify-content: space-between;
+    .credit-player-card{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        &__credit-left{
+            width: fit-content;
+            padding: $xs;
+            border-radius: 4px;
+            background-color: $card-color;
+            &__text{
+                span{
+                    color: $bg-light;
+                    font-weight: $fw-5;
+                    font-size: $l;
+                    line-height: $lh-l;
+                    @include font-style;
+                }
+                .small-text{
+                    font-size: $fs-xs;
+                }
+                
+            }
+            &__progress-bar{
+                margin-top: $s;
+                position: relative;
+                background: $bg-dark;
+                border-radius: 22px;
+                height: 4px;
+                overflow: hidden;
+                width: 70px; 
+                progress{
+                    opacity: 0;   
+                 }
+                }
+    
+        }
+    }
+}
+
+.progress-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    border-radius: 22px;
+    background: #00B2DB;
+  }
+
+  .switchs{
+    width: 140px;
+    align-items: center;
+        
+    .switch__box{ 
+        background-color: $bg-pill;
+        border-radius: 34px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        &__btn{
+            width: 70px;
+            height: fit-content;
+            text-align: center;
+            padding: 13px 0px 13px 0px;
+            align-items: center;
+            cursor: pointer;   
+
+            &.active{
+                background-color: $btn-color;
+                border-radius: 34px;
+            
+            }
+            
+            img{
+                width: 10px;
+                height: 15px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            p{
+                font-size: $fs-sm;
+                color: $bg-light;
+                font-weight: $fw-4;
+                line-height: $lh-s;
+                display: inline-block;
+                vertical-align: middle;
+                @include font-style;
+            }
+        }
+      }
+  }
+ .switch__row{
+    background-color:$bg-body;
+    border: none;
+}

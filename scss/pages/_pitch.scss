@@ -1,0 +1,70 @@
+.pitch-board{
+    background-image: url('#{$img-path}/pitch.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 355px;
+    height: 419px;
+    margin: auto;
+    .team-player{
+        text-align: center;
+        &__titel{
+            font-size: $m;
+            font-weight: $fw-5;
+            line-height: $lh-xs;
+            color: $bg-light;
+            opacity: 0.7;
+            padding: 10px;
+            display: block;
+        }
+        &__item{
+            padding: 3px;
+            position: relative;;
+            &--box{
+                position: absolute;
+                top: 30px;
+                left: 50%;
+                transform: translate(-50%);
+                h6{
+                    padding: 5px;
+                    width: 60px;
+                    text-align: center;
+                    background-color: $bg-light;
+                    font-size: $fs-xs;
+                    line-height: $xs;
+                    font-weight:$fw-5;
+                    margin: auto;
+                    border-radius: 3px;
+                }
+                p{
+                    font-weight: $fw-5;
+                    font-size: $fs-xs;
+                    line-height: $lh-xs;
+                    padding-top: 2px;
+                    color: $bg-light;
+                }
+            }
+        }
+        .team-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.cap::before{
+    content: url(#{$img-path}/capten.png);
+    position: absolute;
+    right: 0;
+    top: -16px;
+}
+.vc::before{
+    content: url(#{$img-path}/vc.png);
+    position: absolute;
+    right: 0;
+    top: -16px;
+}
+#pitch{
+    display: none;
+}

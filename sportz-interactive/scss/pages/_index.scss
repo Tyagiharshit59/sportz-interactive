@@ -1,0 +1,94 @@
+.player-list{
+    width: 355px;
+    margin: auto;
+    background-color: $bg-light;
+    border-radius: 6px;
+    padding: $m;
+    height: 370px;
+    overflow: auto;
+    overflow-x: hidden;
+
+    table {
+        border-collapse: collapse;
+        border: none;
+        width: 100%;
+        th{
+            background-color: $tabel-row-light-color;
+            color: #474747;
+            font-size: $fs-xs;
+            font-weight: $fw-5;
+            line-height: 9px;
+            text-align: left;
+            padding: $xs $xm $xs $xm;
+            position: sticky;
+            top: 0;
+        }
+        td:nth-child(2){
+            color: $bg-body;
+            font-weight: $fw-5;
+            font-size: $fs-m;
+            line-height: $lh-xl;
+        }
+        td:nth-child(3){
+            color: #5E7484;
+            font-size: 14px;
+            line-height: $lh-xl;
+        }
+        td p{
+            font-weight:$fw-4;
+            font-size: $fs-sm;
+            color: #5E7484;
+        }
+        td {
+            text-align: left;
+            padding: $xm $xm $xs $xm;
+            font-size: 14px;
+          }
+        
+      }
+}
+
+table th:first-child{
+    border-radius:10px 0 0 10px;
+  }
+  
+table th:last-child{
+    border-radius:0 10px 10px 0;
+
+  }
+  
+
+table .remove{
+  background-color: $tabel-row-light-color;
+  border-radius: 6px;
+}
+  table td:first-child
+  {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  table td:last-child{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  /* width */
+.player-list::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.player-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $bg-body; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.player-list::-webkit-scrollbar-thumb {
+  background: $bg-body; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.player-list::-webkit-scrollbar-thumb:hover {
+  background: $bg-body; 
+}
